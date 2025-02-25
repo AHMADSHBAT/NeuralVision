@@ -1,6 +1,9 @@
 #pragma once
 #include <functional>
 #include <memory>
+#include "IActivationFnProto.h"
+
+
 
 enum EFn
 {
@@ -25,8 +28,10 @@ public:
     IActivation();
     virtual ~IActivation();
 
+    virtual IActivationFnProto* GetActivationFn() const = 0;
+
 protected:
-    std::shared_ptr<std::function<double(double)>> m_activation;
+    std::unique_ptr<IActivationFnProto> m_activation;
 
 
 };

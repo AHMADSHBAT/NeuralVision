@@ -3,13 +3,14 @@
 #include <memory>
 
 
+class IActivation;
 class INeuron;
 
 
 class ILayer
 {
 public:
-    ILayer(unsigned int);
+    ILayer(unsigned int, const IActivation&);
     virtual ~ILayer();
 
 

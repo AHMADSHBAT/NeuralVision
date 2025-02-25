@@ -18,30 +18,45 @@
     <ClInclude Include="interface\INeuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\CNeuron.h">
+    <ClInclude Include="neuron\include\CNeuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="interface\ILayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\CNeuralLayer.h">
+    <ClInclude Include="layer\include\CNeuralLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="interface\IMLModule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\CMLModule.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\CActivationFn.h">
+    <ClInclude Include="activationFn\include\CActivationFn.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="interface\IActivation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="module\include\CVModule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="layer\include\CConv2D.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="interface\IActivationFnProto.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="activationFn\include\CAFnRetDoubleParamDouble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="activationFn\include\CAFnRetDoubleParamDoubleDouble.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="activationFn\include\CAFnRetVectorParamVector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\CNeuron.cpp">
+    <ClCompile Include="neuron\src\CNeuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="interface\ILayer.cpp">
@@ -53,19 +68,34 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\CNeuralLayer.cpp">
+    <ClCompile Include="layer\src\CNeuralLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="interface\IMLModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\CMLModule.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\CActivationFn.cpp">
+    <ClCompile Include="activationFn\src\CActivationFn.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="interface\IActivation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="module\src\CVModule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="layer\src\CConv2D.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="interface\IActivationFnProto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="activationFn\src\CAFnRetDoubleParamDouble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="activationFn\src\CAFnRetDoubleParamDoubleDouble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="activationFn\src\CAFnRetVectorParamVector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
