@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber>NEED_RHAPSODY_CLIENT_SAVE:**NewOfflineFile**:45-1353976-1741393947</MagicNumber>
+	<CODE-PAGE>1256</CODE-PAGE>
+	<version>109.0</version>
+	<RMMIndexVersion>109.0</RMMIndexVersion>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 3f0284b3-1b46-4e90-8cfc-97b6412ebc3a</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Default</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:27</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_defaultComposite type="s">GUID 4c360087-a337-43c6-ad96-81876ea75a4a</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.1.1970::2:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 4c360087-a337-43c6-ad96-81876ea75a4a</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IClass type="e">
+			<_id type="a">GUID 4c360087-a337-43c6-ad96-81876ea75a4a</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:27</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+<RHAPSODY-INDEX>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID 3f0284b3-1b46-4e90-8cfc-97b6412ebc3a</RHP-ID>
+			<NAME>Default</NAME>
+			<TYPE>Package</TYPE>
+			<DISPLAY-TYPE>Package</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Packages</DISPLAY-GROUP>
+			<BROWSER-ICON>Package~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Package~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:27</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+	</RHAPSODY-INDEX>
+
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<RHAPSODY-INDEX-START>1702</RHAPSODY-INDEX-START>
+<RHAPSODY-INDEX-END>2296</RHAPSODY-INDEX-END>
+<OSLC-LINKS-START>2297</OSLC-LINKS-START>
+<OSLC-LINKS-END>2386</OSLC-LINKS-END>
+<INCLUDES-RHAPSODY-INDEX>true</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

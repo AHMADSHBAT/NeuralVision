@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber>NEED_RHAPSODY_CLIENT_SAVE:**NewOfflineFile**:33-728351-1741393950</MagicNumber>
+	<CODE-PAGE>1256</CODE-PAGE>
+	<version>109.0</version>
+	<RMMIndexVersion>109.0</RMMIndexVersion>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IProject type="e">
+			<_id type="a">GUID 00617679-f34c-4dd1-989a-dbfad417eadf</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Project</_name>
+			<codeUpdateCGTime type="a">3.8.2025::2:32:27</codeUpdateCGTime>
+			<_modifiedTimeWeak type="a">3.8.2025::2:32:27</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:30</_modifiedTime>
+			<_UserColors type="w">
+				<IRPYRawContainer type="e">
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+					<value>16777215</value>
+				</IRPYRawContainer>
+			</_UserColors>
+			<_defaultSubsystem type="r">
+				<ISubsystemHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hname type="a">Default</_hname>
+					<_hid type="a">GUID 3f0284b3-1b46-4e90-8cfc-97b6412ebc3a</_hid>
+				</ISubsystemHandle>
+			</_defaultSubsystem>
+			<_component type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IComponent</_hm2Class>
+					<_hname type="a">DefaultComponent</_hname>
+					<_hid type="a">GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a</_hid>
+				</IHandle>
+			</_component>
+			<Multiplicities type="c">
+				<IRPYRawContainer type="e">
+					<IMultiplicityItem type="e">
+						<_name type="a">1</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">*</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">0,1</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+					<IMultiplicityItem type="e">
+						<_name type="a">1..*</_name>
+						<_count type="a">-1</_count>
+					</IMultiplicityItem>
+					
+				</IRPYRawContainer>
+			</Multiplicities>
+			<_isImportedFromDM type="a">0</_isImportedFromDM>
+			<mapOslcAddedCollections type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</mapOslcAddedCollections>
+			<mapAssociationsToRemove type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</mapAssociationsToRemove>
+			<AggregatesList type="e">
+				<value>GUID dc21324f-d803-466a-aec4-c5bcc76018b7</value>
+				<value>GUID 5bc6cd73-d83c-4d02-b530-2cc953376a5f</value>
+				<value>GUID d24d9192-bc4f-48a2-a4e1-fdaebbdfa6b6</value>
+				<value>GUID ec291c02-94a0-4633-958d-0aa9f480cbdc</value>
+				<value>GUID 3f0284b3-1b46-4e90-8cfc-97b6412ebc3a</value>
+				<value>GUID 55753d6d-40f0-4fcd-952c-78e35d367a96</value>
+				<value>GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a</value>
+			</AggregatesList>
+		</IProject>
+		<IProfile type="e">
+			<fileName type="a">RhapsodyModelManager</fileName>
+			<_persistAs type="a">$OMROOT\Profiles\RhapsodyModelManager</_persistAs>
+			<_id type="a">GUID dc21324f-d803-466a-aec4-c5bcc76018b7</_id>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IProfile type="e">
+			<fileName type="a">CodeCentric752Cpp</fileName>
+			<_persistAs type="a">$OMROOT\Settings\CodeCentric</_persistAs>
+			<_id type="a">GUID 5bc6cd73-d83c-4d02-b530-2cc953376a5f</_id>
+			<_name type="a">CodeCentricCpp</_name>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IProfile type="e">
+			<fileName type="a">UMLPerspectives</fileName>
+			<_persistAs type="a">$OMROOT\Settings\UMLPerspectives</_persistAs>
+			<_id type="a">GUID d24d9192-bc4f-48a2-a4e1-fdaebbdfa6b6</_id>
+			<_partOfTheModelKind type="a">referenceunit</_partOfTheModelKind>
+		</IProfile>
+		<IDependency type="e">
+			<_id type="a">GUID ec291c02-94a0-4633-958d-0aa9f480cbdc</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">CodeCentricCpp</_name>
+			<codeUpdateCGTime type="a">3.8.2025::2:32:26</codeUpdateCGTime>
+			<Stereotypes type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IStereotype</_hm2Class>
+							<_hsubsystem type="a">PredefinedTypes</_hsubsystem>
+							<_hname type="a">AppliedProfile</_hname>
+							<_hid type="a">GUID d2eca2c1-e5a5-4296-9453-29283c4ed8bc</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</Stereotypes>
+			<_modifiedTimeWeak type="a">3.8.2025::2:32:26</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:26</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IProfile</_hm2Class>
+					<_hname type="a">CodeCentricCpp</_hname>
+					<_hid type="a">GUID 5bc6cd73-d83c-4d02-b530-2cc953376a5f</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">IProject</_hm2Class>
+					<_hname type="a">Project</_hname>
+					<_hid type="a">GUID 00617679-f34c-4dd1-989a-dbfad417eadf</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<ISubsystem type="e">
+			<fileName type="a">Default</fileName>
+			<_id type="a">GUID 3f0284b3-1b46-4e90-8cfc-97b6412ebc3a</_id>
+		</ISubsystem>
+		<IDiagram type="e">
+			<fileName type="a">Model1</fileName>
+			<_id type="a">GUID 55753d6d-40f0-4fcd-952c-78e35d367a96</_id>
+		</IDiagram>
+		<IComponent type="e">
+			<fileName type="a">DefaultComponent</fileName>
+			<_id type="a">GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a</_id>
+		</IComponent>
+		
+	</RHAPSODY-MODEL>
+<RHAPSODY-INDEX>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID 00617679-f34c-4dd1-989a-dbfad417eadf</RHP-ID>
+			<NAME>Project</NAME>
+			<TYPE>Project</TYPE>
+			<DISPLAY-TYPE>Project</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Projects</DISPLAY-GROUP>
+			<BROWSER-ICON>Project~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Project~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>true</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:30</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>L:0 | R:Settings%7FCodeCentricCpp | R:Settings%7FUMLPerspectives | R:Profiles%7FRhapsodyModelManager | R:Packages%7FPredefinedTypes | R:Packages%7FPredefinedTypesCpp | L:0 | L:0 | I:0</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID ec291c02-94a0-4633-958d-0aa9f480cbdc</RHP-ID>
+			<NAME>CodeCentricCpp</NAME>
+			<TYPE>Dependency</TYPE>
+			<DISPLAY-TYPE>Dependency</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Dependencies</DISPLAY-GROUP>
+			<BROWSER-ICON>Dependency~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Dependency~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:26</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES>
+				<APPLIED-STEREOTYPES>
+					<VALUE-REFERENCES>
+						<VALUE-ELEMENT>
+							<NAME>AppliedProfile</NAME>
+						</VALUE-ELEMENT>
+					</VALUE-REFERENCES>
+				</APPLIED-STEREOTYPES>
+			
+				<RELATION-SOURCE>
+					<VALUE-ELEMENT>
+						<NAME>Project</NAME>
+						<TYPE>Project</TYPE>
+					</VALUE-ELEMENT>
+				</RELATION-SOURCE>
+				<RELATION-TARGET>
+					<VALUE-ELEMENT>
+						<NAME>CodeCentricCpp</NAME>
+						<TYPE>Settings</TYPE>
+					</VALUE-ELEMENT>
+				</RELATION-TARGET>
+			</REFERENCES></ELEMENT>
+	</RHAPSODY-INDEX>
+
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<RHAPSODY-INDEX-START>5895</RHAPSODY-INDEX-START>
+<RHAPSODY-INDEX-END>7734</RHAPSODY-INDEX-END>
+<OSLC-LINKS-START>7735</OSLC-LINKS-START>
+<OSLC-LINKS-END>7824</OSLC-LINKS-END>
+<INCLUDES-RHAPSODY-INDEX>true</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

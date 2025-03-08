@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber>NEED_RHAPSODY_CLIENT_SAVE:**NewOfflineFile**:54-1967238-1741393942</MagicNumber>
+	<CODE-PAGE>1256</CODE-PAGE>
+	<version>109.0</version>
+	<RMMIndexVersion>109.0</RMMIndexVersion>
+	<lang>C++</lang>
+	<BuildNo>202002261110</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<IComponent type="e">
+			<_id type="a">GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a</_id>
+			<_myState type="a">139264</_myState>
+			<_name type="a">DefaultComponent</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:22</_modifiedTime>
+			<m_buildType type="a">Executable</m_buildType>
+			<m_configActive type="r">
+				<ICodeGenConfigInfoHandle type="e">
+					<_hm2Class type="a">ICodeGenConfigInfo</_hm2Class>
+					<_hid type="a">GUID badb109a-3852-4949-ac6c-4e6ef1824b99</_hid>
+				</ICodeGenConfigInfoHandle>
+			</m_configActive>
+			<HandlesInMe type="c">
+				<IRPYRawContainer type="e">
+					
+						<IHandle type="e">
+							<_hm2Class type="a">ISubsystem</_hm2Class>
+							<_hfilename type="a">.\Default.sbsx</_hfilename>
+							<_hname type="a">Default</_hname>
+							<_hid type="a">GUID 3f0284b3-1b46-4e90-8cfc-97b6412ebc3a</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProfile</_hm2Class>
+							<_hfilename type="a">$OMROOT\Settings\CodeCentric\CodeCentric752Cpp.sbs</_hfilename>
+							<_hname type="a">CodeCentricCpp</_hname>
+							<_hid type="a">GUID 5bc6cd73-d83c-4d02-b530-2cc953376a5f</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProfile</_hm2Class>
+							<_hfilename type="a">$OMROOT\Settings\UMLPerspectives\UMLPerspectives.sbs</_hfilename>
+							<_hname type="a">UMLPerspectives</_hname>
+							<_hid type="a">GUID d24d9192-bc4f-48a2-a4e1-fdaebbdfa6b6</_hid>
+						</IHandle>
+					
+					
+						<IHandle type="e">
+							<_hm2Class type="a">IProfile</_hm2Class>
+							<_hfilename type="a">$OMROOT\Profiles\RhapsodyModelManager\RhapsodyModelManager.sbs</_hfilename>
+							<_hname type="a">RhapsodyModelManager</_hname>
+							<_hid type="a">GUID dc21324f-d803-466a-aec4-c5bcc76018b7</_hid>
+						</IHandle>
+					
+				</IRPYRawContainer>
+			</HandlesInMe>
+			<VariationPoints type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</VariationPoints>
+			<SelectedVariants type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</SelectedVariants>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<AggregatesList type="e">
+				<value>GUID dfd8e45e-f853-4ee1-b4ee-1d97d8fd905a</value>
+				<value>GUID badb109a-3852-4949-ac6c-4e6ef1824b99</value>
+			</AggregatesList>
+		</IComponent>
+		<IFolder type="e">
+			<_id type="a">GUID dfd8e45e-f853-4ee1-b4ee-1d97d8fd905a</_id>
+			<_myState type="a">73728</_myState>
+			<_name type="a">Files</_name>
+			<codeUpdateCGTime type="a">3.8.2025::2:32:22</codeUpdateCGTime>
+			<_modifiedTimeWeak type="a">3.8.2025::2:32:22</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:22</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		<ICodeGenConfigInfo type="e">
+			<_id type="a">GUID badb109a-3852-4949-ac6c-4e6ef1824b99</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DefaultConfig</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:22</_modifiedTime>
+			<_scopeType type="a">Explicit</_scopeType>
+			<_instrumentation type="a">None</_instrumentation>
+			<_timeModel type="a">RealTime</_timeModel>
+			<m_generateActors type="a">1</m_generateActors>
+			<_statechartImplementation type="a">Flat</_statechartImplementation>
+			<_checksList type="a">0 ,</_checksList>
+			<_checksList_Default type="a">1</_checksList_Default>
+			<ScopeElements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</ScopeElements>
+			<InitialInstances type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</InitialInstances>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<AnimScopeElements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</AnimScopeElements>
+			<m_allInAnimScope type="a">1</m_allInAnimScope>
+			<m_generateUsecases type="a">0</m_generateUsecases>
+			<AggregatesList type="e">
+				<value>GUID 97d1f5f9-be71-4499-b2b2-8c5881d8e896</value>
+			</AggregatesList>
+		</ICodeGenConfigInfo>
+		<IFolder type="e">
+			<_id type="a">GUID 97d1f5f9-be71-4499-b2b2-8c5881d8e896</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">DefaultConfig</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">3.8.2025::2:32:22</_modifiedTime>
+			<Elements type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Elements>
+			<Files type="c">
+				<IRPYRawContainer type="e">
+				</IRPYRawContainer>
+			</Files>
+		</IFolder>
+		
+	</RHAPSODY-MODEL>
+<RHAPSODY-INDEX>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a</RHP-ID>
+			<NAME>DefaultComponent</NAME>
+			<TYPE>Component</TYPE>
+			<DISPLAY-TYPE>Component</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Components</DISPLAY-GROUP>
+			<BROWSER-ICON>Component~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Component~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:22</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:0 | I:0</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID dfd8e45e-f853-4ee1-b4ee-1d97d8fd905a</RHP-ID>
+			<NAME>Files</NAME>
+			<TYPE>Folder</TYPE>
+			<DISPLAY-TYPE>Folder</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Folders</DISPLAY-GROUP>
+			<BROWSER-ICON>Folder~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Folder~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:22</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID badb109a-3852-4949-ac6c-4e6ef1824b99</RHP-ID>
+			<NAME>DefaultConfig</NAME>
+			<TYPE>Configuration</TYPE>
+			<DISPLAY-TYPE>Configuration</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Configurations</DISPLAY-GROUP>
+			<BROWSER-ICON>Configuration~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Configuration~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:22</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES>I:0</AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+		<ELEMENT>
+			<ID>0</ID>
+			<RHP-ID>GUID 97d1f5f9-be71-4499-b2b2-8c5881d8e896</RHP-ID>
+			<NAME>DefaultConfig</NAME>
+			<TYPE>Folder</TYPE>
+			<DISPLAY-TYPE>Folder</DISPLAY-TYPE>
+			<DISPLAY-GROUP>Folders</DISPLAY-GROUP>
+			<BROWSER-ICON>Folder~ALL~BrowserIcon</BROWSER-ICON>
+			<GROUP-ICON>Folder~ALL~GroupIcon</GROUP-ICON>
+			<IS-TOP-LEVEL>false</IS-TOP-LEVEL>
+			<MODIFIED-TIME-UTC>2025/3/8 2:32:22</MODIFIED-TIME-UTC>
+			<VIEW-PARENTS></VIEW-PARENTS>
+			<VIEW-CHILDREN></VIEW-CHILDREN>
+			<AGGREGATES></AGGREGATES>
+			<REFERENCES></REFERENCES></ELEMENT>
+	</RHAPSODY-INDEX>
+
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<RHAPSODY-INDEX-START>5232</RHAPSODY-INDEX-START>
+<RHAPSODY-INDEX-END>7561</RHAPSODY-INDEX-END>
+<OSLC-LINKS-START>7562</OSLC-LINKS-START>
+<OSLC-LINKS-END>7651</OSLC-LINKS-END>
+<INCLUDES-RHAPSODY-INDEX>true</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

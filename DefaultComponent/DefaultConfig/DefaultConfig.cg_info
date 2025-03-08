@@ -1,0 +1,26 @@
+I-Logix-RPY-Archive version 8.15.0 * 202002261110
+
+- m_fileModifyTime = { IRPYRawContainer 
+	- size = 0;
+}
+- m_saveUnitAndOwnerSaveUnit = { IRPYRawContainer 
+	- size = 1;
+	- value = "GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a" "GUID 00617679-f34c-4dd1-989a-dbfad417eadf"
+	
+}
+- size = 2;
+- hElement = { IHandle 
+	- _m2Class = "ICodeGenConfigInfo";
+	- _filename = ".\\..\\..\\Project_rpy\\DefaultComponent.cmpx";
+	- _name = "DefaultComponent\\DefaultConfig";
+	- _id = GUID badb109a-3852-4949-ac6c-4e6ef1824b99;
+}
+- genTime = 3.8.2025::3:3:44;
+- hElement = { IHandle 
+	- _m2Class = "IComponent";
+	- _filename = ".\\..\\..\\Project_rpy\\DefaultComponent.cmpx";
+	- _name = "DefaultComponent";
+	- _id = GUID 23a7fefc-3ac7-4dc9-bc47-abbbe5977c0a;
+}
+- genTime = 3.8.2025::3:3:44;
+
