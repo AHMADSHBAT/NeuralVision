@@ -39,9 +39,6 @@ public:
 
 
 private:
-	std::unordered_map<std::string, std::function<double(double)>> activationMap;
-
-private:
 	static double Linear(double x);
 	static double Sigmoid(double x);
 	static double Tanh(double x);

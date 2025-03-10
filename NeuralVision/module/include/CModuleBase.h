@@ -6,9 +6,12 @@ class CLayerBase;
 class CModuleBase : public IMLModule
 {
 public:
-    CModuleBase(std::vector<CLayerBase>& layers);
-    CModuleBase(std::vector<CLayerBase>&& layers);
+    CModuleBase(const std::initializer_list<CLayerBase>& layers);
     ~CModuleBase();
+
+    virtual bool Train();
+    virtual bool Predict();
+    virtual double GetTotalOutput();
 
 
 protected:

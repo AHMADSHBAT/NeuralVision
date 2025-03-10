@@ -2,9 +2,8 @@
 #include "CVModule.h"
 
 
-
 int main()
 {
-    //CVModule module();
+    CVModule model({ CLayerBase(10, FnType::ELU) });
     return 0;
 }

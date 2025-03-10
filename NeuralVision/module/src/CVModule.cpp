@@ -1,18 +1,17 @@
 #include "CVModule.h"
 #include "CLayerBase.h"
-
-CVModule::CVModule(std::vector<CLayerBase>& layers) : CModuleBase(layers)
+#include	"CLogger.h"
+CVModule::CVModule(const std::initializer_list<CLayerBase>& layers) : CModuleBase(layers)
 {
-}
+	LOG(INFO, "Constructor called.");
 
-
-CVModule::CVModule(std::vector<CLayerBase>&& layers) : CModuleBase(std::move(layers))
-{
 }
 
 
 CVModule::~CVModule()
 {
+	LOG(INFO, "Destructor called.");
+
 }
 
 

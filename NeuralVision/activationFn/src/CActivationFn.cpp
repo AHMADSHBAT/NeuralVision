@@ -2,7 +2,6 @@
 #include <stdexcept>
 #include <vector>
 #include <memory>
-#include "IActivationFnProto.h"
 
 CActivationFn::CActivationFn(FnType fn)
 {

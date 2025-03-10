@@ -7,7 +7,7 @@ class CNeuronBase : public INeuron
 {
 public:
     CNeuronBase(unsigned int, FnType);
-    CNeuronBase(CNeuronBase&&);
+    CNeuronBase(CNeuronBase&&) noexcept;
     CNeuronBase(CNeuronBase&);
     virtual ~CNeuronBase();
 

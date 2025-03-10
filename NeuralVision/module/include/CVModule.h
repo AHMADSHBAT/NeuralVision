@@ -2,15 +2,14 @@
 #include "IMLModule.h"
 #include <vector>
 #include "CModuleBase.h"
-
-class CLayerBase;
+#include "CActivationFn.h"
+#include "CLayerBase.h"
 
 
 class CVModule : public CModuleBase
 {
 public:
-    CVModule(std::vector<CLayerBase>& layers);
-    CVModule(std::vector<CLayerBase>&& layers);
+    CVModule(const std::initializer_list<CLayerBase>& layers);
     ~CVModule();
 
 };

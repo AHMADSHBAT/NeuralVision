@@ -6,7 +6,7 @@ CNeuronBase::CNeuronBase(unsigned int input, FnType fn)
 {
 }
 
-CNeuronBase::CNeuronBase(CNeuronBase&& other)
+CNeuronBase::CNeuronBase(CNeuronBase&& other) noexcept
     :m_input(other.GetInput()), m_output(0), m_weight(0), m_bias(0), m_learningRate(0), m_fnType(std::move(other.getFnType()))
 {
 }

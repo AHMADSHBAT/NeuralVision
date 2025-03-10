@@ -71,22 +71,22 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)builds\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)builds\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)builds\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)builds\</IntDir>
   </PropertyGroup>
@@ -147,9 +147,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="helpers\CLogger.h" />
     <ClInclude Include="module\include\CModuleBase.h" />
     <ClInclude Include="layer\include\CLayerBase.h" />
-    <ClInclude Include="interface\IActivationFnProto.h" />
     <ClInclude Include="layer\include\CConv2D.h" />
     <ClInclude Include="module\include\CVModule.h" />
     <ClInclude Include="activationFn\include\CActivationFn.h" />
@@ -161,7 +161,6 @@
   <ItemGroup>
     <ClCompile Include="module\src\CModuleBase.cpp" />
     <ClCompile Include="layer\src\CLayerBase.cpp" />
-    <ClCompile Include="interface\IActivationFnProto.cpp" />
     <ClCompile Include="layer\src\CConv2D.cpp" />
     <ClCompile Include="module\src\CVModule.cpp" />
     <ClCompile Include="activationFn\src\CActivationFn.cpp" />

@@ -1,9 +1,12 @@
 #include "CLayerBase.h"
 #include "CActivationFn.h"
 #include "CNeuronBase.h"
+#include	"CLogger.h"
 
 CLayerBase::CLayerBase(unsigned int n, FnType fn)
 {
+    LOG(INFO, "Constructor called.");
+
     m_neurons.reserve(n); // Reserve memory to avoid multiple allocations
     for (unsigned int i = 0; i < n; i++)
     {
@@ -13,4 +16,6 @@ CLayerBase::CLayerBase(unsigned int n, FnType fn)
 
 CLayerBase::~CLayerBase()
 {
+    LOG(INFO, "Destructor called.");
+
 }
