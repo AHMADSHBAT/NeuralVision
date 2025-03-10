@@ -2,102 +2,108 @@
 #include <stdexcept>
 #include <vector>
 #include <memory>
-#include "IActivation.h"
 #include "IActivationFnProto.h"
-#include "CAFnRetDoubleParamDouble.h"
-#include "CAFnRetVectorParamVector.h"
-#include "CAFnRetDoubleParamDoubleDouble.h"
 
-CActivationFn::CActivationFn(std::string&& str)
+CActivationFn::CActivationFn(FnType fn)
 {
-    auto doubleDouble = dynamic_cast<CAFnRetDoubleParamDouble*>(m_activation.get());
-    auto vectorVector = dynamic_cast<CAFnRetVectorParamVector*>(m_activation.get());
-    auto doubleDoubleDouble = dynamic_cast<CAFnRetDoubleParamDoubleDouble*>(m_activation.get());
-
-    if (doubleDouble) {
-        m_activation = std::make_unique<CAFnRetDoubleParamDouble>(*doubleDouble);
-    } else if (vectorVector) {
-        m_activation = std::make_unique<CAFnRetVectorParamVector>(*vectorVector);
-    } else {
-        m_activation = std::make_unique<CAFnRetDoubleParamDoubleDouble>(*doubleDoubleDouble);
-    }
-
-    if (str == "LINEAR")
-        m_activation.get()->SetActivationFn(Linear);
-    else if (str == "SIGMOID")
-        m_activation.get()->SetActivationFn(Sigmoid);
-    else if (str == "TANH")
-        m_activation.get()->SetActivationFn(Tanh);
-    else if (str == "RELU")
-        m_activation.get()->SetActivationFn(Relu);
-    else if (str == "LEAKY_RELU")
-        m_activation.get()->SetActivationFn(LeakyRelu);
-    else if (str == "SOFTMAX")
-        m_activation.get()->SetActivationFn(Softmax);
-    else if (str == "ELU")
-        m_activation.get()->SetActivationFn(Elu);
-    else if (str == "SELU")
-        m_activation.get()->SetActivationFn(Selu);
-    else if (str == "SWISH")
-        m_activation.get()->SetActivationFn(Swish);
-    else if (str == "MISH")
-        m_activation.get()->SetActivationFn(Mish);
-    else if (str == "GELU")
-        m_activation.get()->SetActivationFn(Gelu);
-    else
-        throw std::invalid_argument("Unknown activation function");
+	switch (fn)
+	{
+	case FnType::LINEAR:
+		m_activationMapDD[(unsigned int)fn] = Linear;
+		break;
+	case FnType::SIGMOID:
+		m_activationMapDD[(unsigned int)fn] = Sigmoid;
+		break;
+	case FnType::TANH:
+		m_activationMapDD[(unsigned int)fn] = Tanh;
+		break;
+	case FnType::RELU:
+		m_activationMapDD[(unsigned int)fn] = Relu;
+		break;
+	case FnType::LEAKY_RELU:
+		m_activationMapDD2[(unsigned int)fn] = LeakyRelu;
+		break;
+	case FnType::SOFTMAX:
+		m_activationMapVD[(unsigned int)fn] = Softmax;
+		break;
+	case FnType::ELU:
+		m_activationMapDD2[(unsigned int)fn] = Elu;
+		break;
+	case FnType::SELU:
+		m_activationMapDD[(unsigned int)fn] = Selu;
+		break;
+	case FnType::SWISH:
+		m_activationMapDD[(unsigned int)fn] = Swish;
+		break;
+	case FnType::MISH:
+		m_activationMapDD[(unsigned int)fn] = Mish;
+		break;
+	case FnType::GELU:
+		m_activationMapDD[(unsigned int)fn] = Gelu;
+		break;
+	default:
+		throw std::invalid_argument("Invalid activation function type");
+	}
 }
 
 
 CActivationFn::~CActivationFn()
 {
 }
-
-IActivationFnProto* CActivationFn::GetActivationFn() const
-{
-    return m_activation.get();
-}
-
 double CActivationFn::Linear(double x) {
-    // Implementation here
+	return x;
 }
 
 double CActivationFn::Sigmoid(double x) {
-    // Implementation here
+	return 1.0 / (1.0 + std::exp(-x));
 }
 
 double CActivationFn::Tanh(double x) {
-    // Implementation here
+	return std::tanh(x);
 }
 
 double CActivationFn::Relu(double x) {
-    // Implementation here
+	return (x > 0) ? x : 0;
 }
 
 double CActivationFn::LeakyRelu(double x, double alpha) {
-    // Implementation here
+	return (x > 0) ? x : alpha * x;
 }
 
 std::vector<double> CActivationFn::Softmax(const std::vector<double>& inputs) {
-    // Implementation here
+	std::vector<double> output(inputs.size());
+	double maxInput = *std::max_element(inputs.begin(), inputs.end());
+	double sum = 0.0;
+
+	for (double x : inputs) {
+		sum += std::exp(x - maxInput);
+	}
+
+	for (size_t i = 0; i < inputs.size(); i++) {
+		output[i] = std::exp(inputs[i] - maxInput) / sum;
+	}
+
+	return output;
 }
 
 double CActivationFn::Elu(double x, double alpha) {
-    // Implementation here
+	return (x >= 0) ? x : alpha * (std::exp(x) - 1);
 }
 
 double CActivationFn::Selu(double x) {
-    // Implementation here
+	constexpr double lambda = 1.0507;
+	constexpr double alpha = 1.67326;
+	return lambda * ((x >= 0) ? x : alpha * (std::exp(x) - 1));
 }
 
 double CActivationFn::Swish(double x) {
-    // Implementation here
+	return x / (1.0 + std::exp(-x));
 }
 
 double CActivationFn::Mish(double x) {
-    // Implementation here
+	return x * std::tanh(std::log1p(std::exp(x)));
 }
 
 double CActivationFn::Gelu(double x) {
-    // Implementation here
+	return 0.5 * x * (1.0 + std::tanh(std::sqrt(2.0 / M_PI) * (x + 0.044715 * std::pow(x, 3))));
 }

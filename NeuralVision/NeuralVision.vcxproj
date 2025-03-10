@@ -147,32 +147,26 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="activationFn\include\CAFnRetDoubleParamDouble.h" />
-    <ClInclude Include="activationFn\include\CAFnRetDoubleParamDoubleDouble.h" />
-    <ClInclude Include="activationFn\include\CAFnRetVectorParamVector.h" />
+    <ClInclude Include="module\include\CModuleBase.h" />
+    <ClInclude Include="layer\include\CLayerBase.h" />
     <ClInclude Include="interface\IActivationFnProto.h" />
     <ClInclude Include="layer\include\CConv2D.h" />
     <ClInclude Include="module\include\CVModule.h" />
     <ClInclude Include="activationFn\include\CActivationFn.h" />
-    <ClInclude Include="interface\IActivation.h" />
     <ClInclude Include="interface\IMLModule.h" />
-    <ClInclude Include="layer\include\CNeuralLayer.h" />
-    <ClInclude Include="neuron\include\CNeuron.h" />
+    <ClInclude Include="neuron\include\CNeuronBase.h" />
     <ClInclude Include="interface\ILayer.h" />
     <ClInclude Include="interface\INeuron.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="activationFn\src\CAFnRetDoubleParamDouble.cpp" />
-    <ClCompile Include="activationFn\src\CAFnRetDoubleParamDoubleDouble.cpp" />
-    <ClCompile Include="activationFn\src\CAFnRetVectorParamVector.cpp" />
+    <ClCompile Include="module\src\CModuleBase.cpp" />
+    <ClCompile Include="layer\src\CLayerBase.cpp" />
     <ClCompile Include="interface\IActivationFnProto.cpp" />
     <ClCompile Include="layer\src\CConv2D.cpp" />
     <ClCompile Include="module\src\CVModule.cpp" />
     <ClCompile Include="activationFn\src\CActivationFn.cpp" />
-    <ClCompile Include="interface\IActivation.cpp" />
     <ClCompile Include="interface\IMLModule.cpp" />
-    <ClCompile Include="layer\src\CNeuralLayer.cpp" />
-    <ClCompile Include="neuron\src\CNeuron.cpp" />
+    <ClCompile Include="neuron\src\CNeuronBase.cpp" />
     <ClCompile Include="interface\ILayer.cpp" />
     <ClCompile Include="interface\INeuron.cpp" />
     <ClCompile Include="src\Main.cpp" />

@@ -1,11 +1,13 @@
 #pragma once
-#include "CNeuralLayer.h"
+#include "CActivationFn.h"
+#include "CLayerBase.h"
 
 
-class CConv2D : public CNeuralLayer
+
+class CConv2D : public CLayerBase
 {
 public:
-    CConv2D(unsigned int, std::string&&);
+    CConv2D(unsigned int, FnType);
     virtual ~CConv2D();
 };
 

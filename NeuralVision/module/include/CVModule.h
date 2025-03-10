@@ -1,9 +1,16 @@
 #pragma once
 #include "IMLModule.h"
-class CVModule : public IMLModule
+#include <vector>
+#include "CModuleBase.h"
+
+class CLayerBase;
+
+
+class CVModule : public CModuleBase
 {
 public:
-    CVModule(std::initializer_list<ILayer> layers);
+    CVModule(std::vector<CLayerBase>& layers);
+    CVModule(std::vector<CLayerBase>&& layers);
     ~CVModule();
 
 };

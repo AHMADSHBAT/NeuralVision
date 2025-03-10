@@ -1,20 +1,12 @@
 #pragma once
 #include <vector>
 #include <memory>
-
-
-class IActivation;
-class INeuron;
+#include "CActivationFn.h"
 
 
 class ILayer
 {
 public:
-    ILayer(unsigned int, const IActivation&);
+    ILayer();
     virtual ~ILayer();
-
-
-protected:
-    std::vector<std::unique_ptr<INeuron>> m_neurons;
-
 };

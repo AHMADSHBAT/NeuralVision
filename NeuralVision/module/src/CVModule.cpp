@@ -1,9 +1,15 @@
 #include "CVModule.h"
-#include "ILayer.h"
+#include "CLayerBase.h"
 
-CVModule::CVModule(std::initializer_list<ILayer> layers) : IMLModule(layers)
+CVModule::CVModule(std::vector<CLayerBase>& layers) : CModuleBase(layers)
 {
 }
+
+
+CVModule::CVModule(std::vector<CLayerBase>&& layers) : CModuleBase(std::move(layers))
+{
+}
+
 
 CVModule::~CVModule()
 {

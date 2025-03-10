@@ -18,22 +18,16 @@
     <ClInclude Include="interface\INeuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="neuron\include\CNeuron.h">
+    <ClInclude Include="neuron\include\CNeuronBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="interface\ILayer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="layer\include\CNeuralLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="interface\IMLModule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="activationFn\include\CActivationFn.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="interface\IActivation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="module\include\CVModule.h">
@@ -45,18 +39,15 @@
     <ClInclude Include="interface\IActivationFnProto.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="activationFn\include\CAFnRetDoubleParamDouble.h">
+    <ClInclude Include="layer\include\CLayerBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="activationFn\include\CAFnRetDoubleParamDoubleDouble.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="activationFn\include\CAFnRetVectorParamVector.h">
+    <ClInclude Include="module\include\CModuleBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="neuron\src\CNeuron.cpp">
+    <ClCompile Include="neuron\src\CNeuronBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="interface\ILayer.cpp">
@@ -68,16 +59,10 @@
     <ClCompile Include="src\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="layer\src\CNeuralLayer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="interface\IMLModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="activationFn\src\CActivationFn.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="interface\IActivation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="module\src\CVModule.cpp">
@@ -89,13 +74,10 @@
     <ClCompile Include="interface\IActivationFnProto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="activationFn\src\CAFnRetDoubleParamDouble.cpp">
+    <ClCompile Include="layer\src\CLayerBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="activationFn\src\CAFnRetDoubleParamDoubleDouble.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="activationFn\src\CAFnRetVectorParamVector.cpp">
+    <ClCompile Include="module\src\CModuleBase.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
