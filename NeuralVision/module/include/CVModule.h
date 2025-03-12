@@ -4,7 +4,16 @@
 #include "CModuleBase.h"
 #include "CActivationFn.h"
 #include "CLayerBase.h"
+#include "CNeuronBase.h"
 
+class INeuron;
+class ILayer;
+class IMLModule;
+class CConv2D;
+class CLayerBase;
+class CActivationFn;
+class CModuleBase;
+class NeuronBase;
 
 class CVModule : public CModuleBase
 {

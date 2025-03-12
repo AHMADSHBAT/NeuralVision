@@ -3,11 +3,15 @@
 #include "CLayerBase.h"
 
 
+class INeuron;
 
 class CConv2D : public CLayerBase
 {
 public:
-    CConv2D(unsigned int, FnType);
-    virtual ~CConv2D();
+	CConv2D(unsigned int, FnType);
+	CConv2D(std::vector<INeuron*>&& vecNeurons);
+	CConv2D(const std::vector<INeuron*>& vecNeurons);
+
+	virtual ~CConv2D();
 };
 
