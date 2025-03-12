@@ -14,4 +14,8 @@ public:
     virtual void SetBias(double bias) = 0;
     virtual double GetBias() = 0;
     virtual void SetLearningRate(double learningRate) = 0;
+
+
+public:
+    virtual bool SetNeuronConn() = 0;
 };

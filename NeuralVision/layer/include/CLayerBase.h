@@ -9,6 +9,8 @@ class CLayerBase : public ILayer
 public:
 
 	CLayerBase(unsigned int, FnType);
+	CLayerBase(std::vector<CNeuronBase>&& vecNeurons);
+	//CLayerBase(std::vector<std::pair<CNeuronBase&&,const INeuron*>&&>&&, FnType);
 	virtual ~CLayerBase();
 
 

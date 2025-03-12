@@ -6,7 +6,7 @@
 class CNeuronBase : public INeuron
 {
 public:
-    CNeuronBase(unsigned int, FnType);
+    CNeuronBase(INeuron* nextConnNeuron, double weight, FnType fn);
     CNeuronBase(CNeuronBase&&) noexcept;
     CNeuronBase(CNeuronBase&);
     virtual ~CNeuronBase();
@@ -22,12 +22,14 @@ public:
     virtual void SetBias(double bias);
     virtual double GetBias();
     virtual void SetLearningRate(double learningRate);
-
+    virtual bool SetNeuronConn();
 
 protected:
+    std::unordered_map<INeuron*, double> m_NConnMap;
     double m_input;
     double m_output;
     double m_weight;
+    //std::vector<double> m_weight;
     double m_bias;
     double m_learningRate;
     FnType m_fnType;

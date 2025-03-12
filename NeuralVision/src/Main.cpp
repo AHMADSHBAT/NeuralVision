@@ -4,6 +4,6 @@
 
 int main()
 {
-    CVModule model({ CLayerBase(10, FnType::ELU) });
+    CVModule model({ CVModule()});
     return 0;
 }
