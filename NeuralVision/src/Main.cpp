@@ -5,22 +5,31 @@
 
 int main()
 {
+	INeuron* n1l1 = new CNeuronBase(std::move(VecDouble{ 1.0 }), FnType::RELU);
+	INeuron* n2l1 = new CNeuronBase(std::move(VecDouble{ 1.0 }), FnType::RELU);
+	INeuron* n3l1 = new CNeuronBase(std::move(VecDouble{ 1.0 }), FnType::RELU);
+
+
+	INeuron* n1l2 = new CNeuronBase(std::vector<INeuron*>{ n1l1, n2l1, n3l1 }, { 0.001, 0.001, 0.001 }, FnType::RELU);
+	INeuron* n2l2 = new CNeuronBase(std::vector<INeuron*>{ n1l1, n2l1, n3l1 }, { 0.001, 0.001, 0.001 }, FnType::RELU);
+	INeuron* n3l2 = new CNeuronBase(std::vector<INeuron*>{ n1l1, n2l1, n3l1 }, { 0.001, 0.001, 0.001 }, FnType::RELU);
+
+
 	std::vector<INeuron*> neurons =
 	{
-		new CNeuronBase(nullptr, 0.001, FnType::RELU),
-		new CNeuronBase(nullptr, 0.001, FnType::RELU),
-		new CNeuronBase(nullptr, 0.001, FnType::RELU)
+		n1l1,
+		n2l1,
+		n3l1
 	};
-
 	std::vector<INeuron*> neurons1 =
 	{
-		new CNeuronBase(nullptr, 0.001, FnType::RELU),
-		new CNeuronBase(nullptr, 0.001, FnType::RELU),
-		new CNeuronBase(nullptr, 0.001, FnType::RELU)
+		n1l2,
+		n2l2,
+		n3l2
 	};
 
 	CLayerBase* layer1 = new CConv2D(neurons);
 	CLayerBase* layer2 = new CConv2D(neurons1);
-	CVModule model({*layer1, *layer2});
+	CVModule model({ *layer1, *layer2 });
 	return 0;
 }
