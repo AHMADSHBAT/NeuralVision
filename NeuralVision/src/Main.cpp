@@ -5,9 +5,10 @@
 
 int main()
 {
-	INeuron* n1l1 = new CNeuronBase(std::move(VecDouble{ 1.0 }), FnType::RELU);
-	INeuron* n2l1 = new CNeuronBase(std::move(VecDouble{ 1.0 }), FnType::RELU);
-	INeuron* n3l1 = new CNeuronBase(std::move(VecDouble{ 1.0 }), FnType::RELU);
+
+	INeuron* n1l1 = new CNeuronBase(VecDouble{ 1.0 }, FnType::RELU);
+	INeuron* n2l1 = new CNeuronBase(VecDouble{ 1.0 }, FnType::RELU);
+	INeuron* n3l1 = new CNeuronBase(VecDouble{ 1.0 }, FnType::RELU);
 
 
 	INeuron* n1l2 = new CNeuronBase(std::vector<INeuron*>{ n1l1, n2l1, n3l1 }, { 0.001, 0.001, 0.001 }, FnType::RELU);
@@ -21,6 +22,7 @@ int main()
 		n2l1,
 		n3l1
 	};
+
 	std::vector<INeuron*> neurons1 =
 	{
 		n1l2,
