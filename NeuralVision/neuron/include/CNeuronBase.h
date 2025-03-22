@@ -32,9 +32,9 @@ public:
 
 protected:
 	std::unordered_map<INeuron*, double> m_NConnMap;
+	std::vector<double> m_weight;
 	double m_input;
 	double m_output;
-	std::vector<double> m_weight;
 	double m_bias;
 	double m_learningRate;
 	FnType m_fnType;

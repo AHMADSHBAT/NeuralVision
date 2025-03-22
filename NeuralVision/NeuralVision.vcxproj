@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="layer\include\CLayerBase2.h" />
     <ClInclude Include="helpers\CLogger.h" />
     <ClInclude Include="module\include\CModuleBase.h" />
     <ClInclude Include="layer\include\CLayerBase.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="interface\INeuron.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="layer\src\CLayerBase2.cpp" />
     <ClCompile Include="module\src\CModuleBase.cpp" />
     <ClCompile Include="layer\src\CLayerBase.cpp" />
     <ClCompile Include="layer\src\CConv2D.cpp" />
