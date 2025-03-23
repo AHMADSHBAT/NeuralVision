@@ -27,7 +27,7 @@ enum class FnType
 	SWISH = 8U,
 	MISH = 9U,
 	GELU = 10U,
-	MAX = 11U
+	MAX_NO_FN_TYPE = 11U
 };
 
 

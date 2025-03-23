@@ -33,7 +33,7 @@
     <ClInclude Include="module\include\CVModule.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="layer\include\CConv2D.h">
+    <ClInclude Include="layer\include\CConv2DLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="layer\include\CLayerBase.h">
@@ -46,6 +46,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="layer\include\CLayerBase2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers\CImage2RawConv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="neuron\include\CConv2DNeuron.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -71,7 +80,7 @@
     <ClCompile Include="module\src\CVModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="layer\src\CConv2D.cpp">
+    <ClCompile Include="layer\src\CConv2DLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="layer\src\CLayerBase.cpp">
@@ -81,6 +90,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="layer\src\CLayerBase2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers\CImage2RawConv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="neuron\src\CConv2DNeuron.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

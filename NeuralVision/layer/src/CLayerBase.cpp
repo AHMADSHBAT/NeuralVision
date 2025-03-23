@@ -6,6 +6,10 @@
 
 
 
+CLayerBase::CLayerBase()
+{
+}
+
 CLayerBase::CLayerBase(std::vector<INeuron*>&& vecNeurons)
 {
     LOG(INFO, "Constructor called.");

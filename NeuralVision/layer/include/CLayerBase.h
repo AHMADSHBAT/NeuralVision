@@ -8,7 +8,7 @@ class INeuron;
 class CLayerBase : public ILayer
 {
 public:
-
+	CLayerBase();
 	CLayerBase(std::vector<INeuron*>&& vecNeurons);
 	CLayerBase(const std::vector<INeuron*>& vecNeurons);
 	virtual ~CLayerBase();

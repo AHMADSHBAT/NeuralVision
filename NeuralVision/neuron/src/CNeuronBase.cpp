@@ -3,8 +3,8 @@
 #include <stdexcept>
 #include "CLogger.h"
 
-CNeuronBase::CNeuronBase(std::vector<INeuron*>& connNeurons, std::vector<double>& weights, FnType fn)
-	:m_input(0), m_output(0), m_weight(weights), m_bias(0), m_learningRate(0), m_fnType(fn)
+CNeuronBase::CNeuronBase(std::vector<INeuron*>& connNeurons, std::vector<std::vector<double>>& weights, FnType fn)
+	:m_input(0), m_output(0), m_weights(weights), m_bias(0), m_learningRate(0), m_fnType(fn)
 {
 	LOG(INFO, "CNeuronBase constructor called.");
 	if (connNeurons.size() != weights.size()) {
@@ -16,8 +16,8 @@ CNeuronBase::CNeuronBase(std::vector<INeuron*>& connNeurons, std::vector<double>
 	}
 }
 
-CNeuronBase::CNeuronBase(std::vector<INeuron*>&& connNeurons, std::vector<double>&& weights, FnType fn)
-	:m_input(0), m_output(0), m_weight(weights), m_bias(0), m_learningRate(0), m_fnType(fn)
+CNeuronBase::CNeuronBase(std::vector<INeuron*>&& connNeurons, std::vector<std::vector<double>>&& weights, FnType fn)
+	:m_input(0), m_output(std::move(std::vector<std::vector<double>>{})), m_weights(weights), m_bias(0), m_learningRate(0), m_fnType(fn)
 {
 	LOG(INFO, "CNeuronBase constructor called.");
 	if (connNeurons.size() != weights.size()) {
@@ -29,16 +29,12 @@ CNeuronBase::CNeuronBase(std::vector<INeuron*>&& connNeurons, std::vector<double
 	}
 }
 
-CNeuronBase::CNeuronBase(std::vector<double>& weights, FnType fn)
-	:m_input(0), m_output(0), m_weight(weights), m_bias(0), m_learningRate(0), m_fnType(fn)
+CNeuronBase::CNeuronBase(CNeuronBase&&) noexcept
 {
-	LOG(INFO, "CNeuronBase constructor called.");
 }
 
-CNeuronBase::CNeuronBase(std::vector<double>&& weights, FnType fn)
-	:m_input(0), m_output(0), m_weight(std::move(weights)), m_bias(0), m_learningRate(0), m_fnType(fn)
+CNeuronBase::CNeuronBase(CNeuronBase&)
 {
-	LOG(INFO, "CNeuronBase constructor called.");
 }
 
 CNeuronBase::~CNeuronBase()
@@ -51,3 +47,4 @@ FnType CNeuronBase::getFnType()
 	LOG(INFO, "CNeuronBase::getFnType called.");
 	return m_fnType;
 }
+

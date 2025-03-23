@@ -9,7 +9,7 @@
 class INeuron;
 class ILayer;
 class IMLModule;
-class CConv2D;
+class CConv2DLayer;
 class CLayerBase;
 class CActivationFn;
 class CModuleBase;

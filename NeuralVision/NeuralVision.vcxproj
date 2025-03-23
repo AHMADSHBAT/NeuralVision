@@ -81,7 +81,7 @@
     <IntDir>$(ProjectDir)builds\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers;$(ProjectDir)vendor</IncludePath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)builds\</IntDir>
   </PropertyGroup>
@@ -147,23 +147,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="neuron\include\CConv2DNeuron.h" />
+    <ClInclude Include="helpers\CImage2RawConv.h" />
     <ClInclude Include="layer\include\CLayerBase2.h" />
     <ClInclude Include="helpers\CLogger.h" />
     <ClInclude Include="module\include\CModuleBase.h" />
     <ClInclude Include="layer\include\CLayerBase.h" />
-    <ClInclude Include="layer\include\CConv2D.h" />
+    <ClInclude Include="layer\include\CConv2DLayer.h" />
     <ClInclude Include="module\include\CVModule.h" />
     <ClInclude Include="activationFn\include\CActivationFn.h" />
     <ClInclude Include="interface\IMLModule.h" />
     <ClInclude Include="neuron\include\CNeuronBase.h" />
     <ClInclude Include="interface\ILayer.h" />
     <ClInclude Include="interface\INeuron.h" />
+    <ClInclude Include="vendor\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="neuron\src\CConv2DNeuron.cpp" />
+    <ClCompile Include="helpers\CImage2RawConv.cpp" />
     <ClCompile Include="layer\src\CLayerBase2.cpp" />
     <ClCompile Include="module\src\CModuleBase.cpp" />
     <ClCompile Include="layer\src\CLayerBase.cpp" />
-    <ClCompile Include="layer\src\CConv2D.cpp" />
+    <ClCompile Include="layer\src\CConv2DLayer.cpp" />
     <ClCompile Include="module\src\CVModule.cpp" />
     <ClCompile Include="activationFn\src\CActivationFn.cpp" />
     <ClCompile Include="interface\IMLModule.cpp" />
