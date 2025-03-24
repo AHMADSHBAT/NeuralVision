@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{41106654-142e-42c3-a579-f89f62995263}</ProjectGuid>
-    <RootNamespace>NeuralVision</RootNamespace>
+    <ProjectGuid>{273322fd-997e-4044-90e3-63a339c2d90e}</ProjectGuid>
+    <RootNamespace>NVUI</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -70,25 +70,11 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
-    <OutDir>$(ProjectDir)bin\</OutDir>
-    <IntDir>$(ProjectDir)builds\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
-    <OutDir>$(ProjectDir)bin\</OutDir>
-    <IntDir>$(ProjectDir)builds\</IntDir>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers;$(ProjectDir)vendor</IncludePath>
     <OutDir>$(ProjectDir)bin\</OutDir>
     <IntDir>$(ProjectDir)builds\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir)include;$(ProjectDir)module\include;$(ProjectDir)layer\include;$(ProjectDir)activationFn\include;$(ProjectDir)neuron\include;$(ProjectDir)interface;$(ProjectDir)helpers</IncludePath>
-    <OutDir>$(ProjectDir)bin\</OutDir>
-    <IntDir>$(ProjectDir)builds\</IntDir>
+    <LibraryPath>d3d12.lib;dxgi.lib;d3dcompiler.lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)include;$(ProjectDir)vendor\imgui;$(ProjectDir)vendor\imgui\backends;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -126,7 +112,7 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
@@ -147,38 +133,34 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="neuron\include\CConv2DNeuron.h" />
-    <ClInclude Include="helpers\CImage2RawConv.h" />
-    <ClInclude Include="layer\include\CLayerBase2.h" />
-    <ClInclude Include="helpers\CLogger.h" />
-    <ClInclude Include="module\include\CModuleBase.h" />
-    <ClInclude Include="layer\include\CLayerBase.h" />
-    <ClInclude Include="layer\include\CConv2DLayer.h" />
-    <ClInclude Include="module\include\CVModule.h" />
-    <ClInclude Include="activationFn\include\CActivationFn.h" />
-    <ClInclude Include="interface\IMLModule.h" />
-    <ClInclude Include="neuron\include\CNeuronBase.h" />
-    <ClInclude Include="interface\ILayer.h" />
-    <ClInclude Include="interface\INeuron.h" />
-    <ClInclude Include="vendor\stb_image.h" />
+    <ClCompile Include="src\CDX12.cpp" />
+    <ClCompile Include="src\CImGui.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="vendor\imgui\backends\imgui_impl_dx12.cpp" />
+    <ClCompile Include="vendor\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="vendor\imgui\imgui.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="neuron\src\CConv2DNeuron.cpp" />
-    <ClCompile Include="helpers\CImage2RawConv.cpp" />
-    <ClCompile Include="layer\src\CLayerBase2.cpp" />
-    <ClCompile Include="module\src\CModuleBase.cpp" />
-    <ClCompile Include="layer\src\CLayerBase.cpp" />
-    <ClCompile Include="layer\src\CConv2DLayer.cpp" />
-    <ClCompile Include="module\src\CVModule.cpp" />
-    <ClCompile Include="activationFn\src\CActivationFn.cpp" />
-    <ClCompile Include="interface\IMLModule.cpp" />
-    <ClCompile Include="neuron\src\CNeuronBase.cpp" />
-    <ClCompile Include="interface\ILayer.cpp" />
-    <ClCompile Include="interface\INeuron.cpp" />
-    <ClCompile Include="src\Main.cpp" />
+    <ClInclude Include="include\CDX12.h" />
+    <ClInclude Include="include\CImGui.h" />
+    <ClInclude Include="vendor\imgui\backends\imgui_impl_dx12.h" />
+    <ClInclude Include="vendor\imgui\backends\imgui_impl_win32.h" />
+    <ClInclude Include="vendor\imgui\imconfig.h" />
+    <ClInclude Include="vendor\imgui\imgui.h" />
+    <ClInclude Include="vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="vendor\imgui\imstb_truetype.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+    <None Include="vendor\imgui\.editorconfig" />
+    <None Include="vendor\imgui\.gitattributes" />
+    <None Include="vendor\imgui\.gitignore" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
