@@ -10,7 +10,7 @@ class CConv2DLayer : public CLayerBase
 public:
 	CConv2DLayer(std::vector<INeuron*>&& vecNeurons);
 	CConv2DLayer(const std::vector<INeuron*>& vecNeurons);
-	CConv2DLayer(unsigned int neuronNum, unsigned int kernel, std::vector<std::vector<std::vector<double>>>&& filters);
+	CConv2DLayer(unsigned int neuronNum, unsigned int kernel, std::vector<std::vector<double>>&& filters);
 
 	virtual ~CConv2DLayer();
 
