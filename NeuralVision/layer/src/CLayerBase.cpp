@@ -5,15 +5,9 @@
 #include <memory>
 
 
-CLayerBase::CLayerBase(unsigned int n, FnType fn)
-{
-    LOG(INFO, "Constructor called.");
 
-    m_neurons.reserve(n); // Reserve memory to avoid multiple allocations
-    for (unsigned int i = 0; i < n; i++)
-    {
-        m_neurons.emplace_back(std::move(std::make_shared<CNeuronBase>(nullptr, 0, fn)));
-    }
+CLayerBase::CLayerBase()
+{
 }
 
 CLayerBase::CLayerBase(std::vector<INeuron*>&& vecNeurons)
