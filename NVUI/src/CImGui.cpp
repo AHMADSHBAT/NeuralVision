@@ -1,5 +1,5 @@
 #include "CImGui.h"
-
+#include "CImGuiImageRenderer.h"
 CImGui::CImGui(ID3D12Device* device, HWND hwnd, int numFramesInFlight, DXGI_FORMAT rtvFormat)
 {
     // Store the DX12 device
@@ -68,7 +68,8 @@ void CImGui::RenderImGui(ID3D12GraphicsCommandList* cmdList)
 
     // Create a demo window (you can replace this with your custom UI).
     ImGui::Begin("Hello, ImGui!");
-    ImGui::Text("This is an integrated ImGui window!");
+    CImGuiImageRenderer img;
+    img.ShowImageWorkspace(std::vector<unsigned char>{});
     ImGui::End();
 
     // Finalize the frame.

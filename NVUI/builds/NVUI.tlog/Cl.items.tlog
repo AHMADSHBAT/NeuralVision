@@ -1,0 +1,12 @@
+C:\Code\NeuralVision\NVUI\src\CImGuiImageRenderer.cpp;C:\Code\NeuralVision\NVUI\builds\CImGuiImageRenderer.obj
+C:\Code\NeuralVision\NVUI\src\CGDIScreenCapture.cpp;C:\Code\NeuralVision\NVUI\builds\CGDIScreenCapture.obj
+C:\Code\NeuralVision\NVUI\src\CDX12.cpp;C:\Code\NeuralVision\NVUI\builds\CDX12.obj
+C:\Code\NeuralVision\NVUI\src\CImGui.cpp;C:\Code\NeuralVision\NVUI\builds\CImGui.obj
+C:\Code\NeuralVision\NVUI\src\Main.cpp;C:\Code\NeuralVision\NVUI\builds\Main.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\backends\imgui_impl_dx12.cpp;C:\Code\NeuralVision\NVUI\builds\imgui_impl_dx12.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\backends\imgui_impl_win32.cpp;C:\Code\NeuralVision\NVUI\builds\imgui_impl_win32.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\imgui.cpp;C:\Code\NeuralVision\NVUI\builds\imgui.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\imgui_demo.cpp;C:\Code\NeuralVision\NVUI\builds\imgui_demo.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\imgui_draw.cpp;C:\Code\NeuralVision\NVUI\builds\imgui_draw.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\imgui_tables.cpp;C:\Code\NeuralVision\NVUI\builds\imgui_tables.obj
+C:\Code\NeuralVision\NVUI\vendor\imgui\imgui_widgets.cpp;C:\Code\NeuralVision\NVUI\builds\imgui_widgets.obj

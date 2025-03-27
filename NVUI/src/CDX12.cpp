@@ -1,4 +1,9 @@
 #include "CDX12.h"
+#include "CGDIScreenCapture.h"
+#include "CImGui.h"
+#pragma comment(lib, "d3d12.lib")
+#pragma comment(lib, "dxgi.lib")
+#pragma comment(lib, "dxguid.lib")  // Sometimes needed for older SDKs
 
 // Constructor: Initialize the window and DX12.
 CDX12::CDX12(HINSTANCE hInstance, int nCmdShow, int width, int height)
@@ -66,6 +71,8 @@ void CDX12::InitD3D()
 // Runs the main message loop.
 int CDX12::Run()
 {
+    //static bool b = false;
+
     MSG msg = {};
     while (msg.message != WM_QUIT)
     {
@@ -75,6 +82,9 @@ int CDX12::Run()
             DispatchMessage(&msg);
         }
         // Render calls and updates would go here.
+        //CImGui::CImGui(ID3D12Device * device, HWND hwnd, int numFramesInFlight, DXGI_FORMAT rtvFormat)
+        CImGui* InitImGui = new CImGui(m_device.Get(), m_hWnd, 3, DXGI_FORMAT_420_OPAQUE);
+        InitImGui->RenderImGui(nullptr);
     }
     return static_cast<int>(msg.wParam);
 }

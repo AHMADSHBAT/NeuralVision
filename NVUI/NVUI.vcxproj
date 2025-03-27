@@ -110,10 +110,12 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d12.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -133,6 +135,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\CImGuiImageRenderer.cpp" />
+    <ClCompile Include="src\CGDIScreenCapture.cpp" />
     <ClCompile Include="src\CDX12.cpp" />
     <ClCompile Include="src\CImGui.cpp" />
     <ClCompile Include="src\Main.cpp" />
@@ -145,6 +149,9 @@
     <ClCompile Include="vendor\imgui\imgui_widgets.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\CImGuiImageRenderer.h" />
+    <ClInclude Include="include\CLogger.h" />
+    <ClInclude Include="include\CGDIScreenCapture.h" />
     <ClInclude Include="include\CDX12.h" />
     <ClInclude Include="include\CImGui.h" />
     <ClInclude Include="vendor\imgui\backends\imgui_impl_dx12.h" />
